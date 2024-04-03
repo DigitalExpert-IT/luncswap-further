@@ -1,3 +1,6 @@
+body {
+  background: linear-gradient(181deg, #1a3150 0.54%, #070626 98.69%);
+}
 nav.navbar {
   background-color: #010525;
   @apply h-[55px] lg:h-[70px];
