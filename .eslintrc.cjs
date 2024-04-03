@@ -29,6 +29,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "react"],
   rules: {
     "linebreak-style": ["error", "unix"],
+    "react/react-in-jsx-scope": "off",
     semi: ["error", "always"],
   },
 };

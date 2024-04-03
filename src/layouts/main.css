@@ -1,0 +1,21 @@
+nav.navbar {
+  background-color: #010525;
+  @apply h-[55px] lg:h-[70px];
+  @apply flex flex-row items-center;
+  @apply px-3 lg:px-4;
+  @apply sticky top-0 z-50;
+
+  .left {
+    @apply flex-1;
+    @apply lg:flex-auto;
+    img {
+      @apply h-[35px];
+      @apply lg:h-[50px];
+    }
+  }
+
+  .right {
+    @apply lg:static lg:w-auto lg:h-auto lg:bg-transparent lg:p-0;
+    @apply lg:flex-1 lg:flex-row lg:justify-end lg:items-center;
+  }
+}
