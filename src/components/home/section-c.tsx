@@ -32,10 +32,12 @@ export function SectionC() {
         <MoonStarIcon
           className="absolute opacity-25 md:opacity-100 left-[-130px] md:left-[-100px] text-primary top-[25%]"
           size={200}
+          strokeWidth={1}
         />
 
         <CatIcon
           className="absolute opacity-25 md:opacity-100 top-[-30px] rotate-[-20deg] text-primary"
+          strokeWidth={1}
           size={80}
         />
 

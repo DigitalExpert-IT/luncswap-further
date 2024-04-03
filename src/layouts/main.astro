@@ -11,6 +11,7 @@ type Props = {
 const { title } = Astro.props;
 const computedTitle = title ? `${title} | ${SITENAME}` : SITENAME;
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -33,5 +34,11 @@ const computedTitle = title ? `${title} | ${SITENAME}` : SITENAME;
       </div>
     </nav>
     <slot />
+    <footer>
+      <div class="inner">
+        <p>All rights reserved.</p>
+        <p class="txt-logo">Luncswap</p>
+      </div>
+    </footer>
   </body>
 </html>
