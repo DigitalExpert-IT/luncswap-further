@@ -1,5 +1,5 @@
 .section-c {
-  @apply py-10 px-4 overflow-x-hidden;
+  @apply py-[150px] px-4 md:px-12 overflow-x-hidden;
   .inner {
     @apply bg-[#020624] relative;
     @apply container px-8 pt-12 pb-20;
@@ -21,7 +21,8 @@
   }
 
   .social-card {
-    @apply bg-[#f6dd7c] relative z-10;
+    @apply bg-primary relative z-10 cursor-pointer;
+    @apply hover:bg-primary/90;
     @apply rounded-xl;
 
     figure {

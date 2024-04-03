@@ -70,14 +70,12 @@ type SocialCardProps = {
 export function SocialCard({ name, image, href, label }: SocialCardProps) {
   return (
     <div className="social-card">
-      <figure>
-        <img src={image} alt={name} />
-        <figcaption>
-          <a href={href} target="_blank" rel="noreferrer">
-            {label}
-          </a>
-        </figcaption>
-      </figure>
+      <a href={href} target="_blank" rel="noreferrer">
+        <figure>
+          <img src={image} alt={name} />
+          <figcaption>{label}</figcaption>
+        </figure>
+      </a>
     </div>
   );
 }
