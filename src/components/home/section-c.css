@@ -1,0 +1,42 @@
+.section-c {
+  @apply py-10 px-4 overflow-x-hidden;
+  .inner {
+    @apply bg-[#020624] relative;
+    @apply container px-8 pt-12 pb-20;
+    @apply flex flex-col gap-12;
+    @apply rounded-2xl shadow-2xl;
+    .heading {
+      @apply text-center relative z-10;
+      h2 {
+        @apply text-5xl mb-3 font-semibold;
+      }
+      p {
+        @apply max-w-[600px] mx-auto text-lg text-gray-500;
+      }
+    }
+
+    .socials {
+      @apply flex flex-row justify-center gap-4;
+    }
+  }
+
+  .social-card {
+    @apply bg-[#f6dd7c] relative z-10;
+    @apply rounded-xl;
+
+    figure {
+      img {
+        @apply px-10 py-6 w-[40vw] md:max-w-[200px];
+      }
+
+      figcaption {
+        @apply text-center text-sm md:text-lg font-bold py-2 pb-3 mb-[-1px];
+        background-color: rgba(0, 0, 0, 0.3);
+
+        a {
+          @apply text-white hover:text-white/70;
+        }
+      }
+    }
+  }
+}
