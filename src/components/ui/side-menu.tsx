@@ -20,7 +20,17 @@ const NAVIGATIONS = [
 export function SideMenu() {
   return (
     <div>
-      <span className="lg:hidden">
+      <span className="md:block hidden">
+        <div className="flex flex-row justify-end items-center gap-6">
+          {NAVIGATIONS.map(({ label, href }) => (
+            <MenuItem key={label + href} label={label} href={href} />
+          ))}
+
+          <WalletConnection />
+        </div>
+      </span>
+
+      <span className="md:hidden">
         <Sheet>
           <SheetTrigger asChild>
             <Button size="icon">
@@ -40,13 +50,7 @@ export function SideMenu() {
             <div className="flex-1">
               <div className="flex flex-col mt-4">
                 {NAVIGATIONS.map(({ label, href }) => (
-                  <a
-                    key={href}
-                    href={href}
-                    className="block font-medium text-base text-white"
-                  >
-                    {label}
-                  </a>
+                  <MenuItem key={label + href} label={label} href={href} />
                 ))}
               </div>
             </div>
@@ -55,5 +59,17 @@ export function SideMenu() {
         </Sheet>
       </span>
     </div>
+  );
+}
+
+function MenuItem({ label, href }: { label: string; href: string }) {
+  return (
+    <a
+      key={href}
+      href={href}
+      className="block font-medium text-base text-white"
+    >
+      {label}
+    </a>
   );
 }
