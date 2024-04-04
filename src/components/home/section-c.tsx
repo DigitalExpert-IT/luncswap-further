@@ -1,4 +1,3 @@
-import "./section-c.css";
 import {
   MoonStarIcon,
   CatIcon,
