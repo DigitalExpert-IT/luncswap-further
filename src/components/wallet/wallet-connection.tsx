@@ -1,15 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
+import { type Keplr } from "./interface";
 
 declare global {
   interface Window {
     station: {
-      keplr: {
-        getOfflineSigner: (chainId: string) => any;
-        enable: (chainId: string) => Promise<void>;
-      };
+      keplr: Keplr;
     };
   }
+}
+
+class Wallet {
+  // connect
+  // disconnect
+  // signTransaction
+  // getCurrentAddress
+  // getBalance
+  // getCurrentChain
 }
 
 export function WalletConnection() {
