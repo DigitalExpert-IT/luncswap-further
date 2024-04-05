@@ -16,7 +16,8 @@ describe('Wallet Selector', () => {
         const detectedWallets = detectWallet();
         expect(detectedWallets).toStrictEqual([{
             name: 'station',
-            type: 'extension'
+            type: 'extension',
+            keplr: keplrFixtures
         }]);
     });
 
@@ -27,7 +28,8 @@ describe('Wallet Selector', () => {
 
         expect(detectedWallets).toStrictEqual([{
             name: 'keplr',
-            type: 'extension'
+            type: 'extension',
+            keplr: keplrFixtures
         }]);
     });
 
@@ -40,7 +42,8 @@ describe('Wallet Selector', () => {
     
         expect(detectedWallets).toStrictEqual([{
             name: 'galaxyStation',
-            type: 'extension'
+            type: 'extension',
+            keplr: keplrFixtures
         }]);
     });
 
@@ -54,10 +57,12 @@ describe('Wallet Selector', () => {
     
         expect(detectedWallets).toStrictEqual([{
             name: 'galaxyStation',
-            type: 'extension'
+            type: 'extension',
+            keplr: keplrFixtures
         }, {
             name: 'keplr',
-            type: 'extension'
+            type: 'extension',
+            keplr: keplrFixtures
         }]);
     });
 });

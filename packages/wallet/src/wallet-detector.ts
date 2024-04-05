@@ -15,15 +15,17 @@ const SUPPORTED_WALLETS = {station: 'station.keplr', galaxyStation: 'galaxyStati
 
 export type WalletType = {
   name: 'station' | 'galaxyStation' | 'keplr';
-  type: 'extension'
+  type: 'extension';
+  keplr: typeof keplrFixtures
 };
 
 export const detectWallet = (): WalletType[] => {
     const result: WalletType[] = [];
     Object.keys(SUPPORTED_WALLETS).forEach((name) => {
-        const {version, mode} = get(globalThis, SUPPORTED_WALLETS[name as 'station'], {} as typeof keplrFixtures);
+        const keplr = get(globalThis, SUPPORTED_WALLETS[name as 'station'], {} as typeof keplrFixtures);
+        const {version, mode} = keplr;
         if (typeof version === 'string' && mode === 'extension') {
-            result.push({name: name as 'station', type: 'extension'});
+            result.push({name: name as 'station', type: 'extension', keplr});
         }
     });
     return result;
