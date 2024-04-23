@@ -45,28 +45,30 @@ export const SwapForm = () => {
         </div>
       </div>
       <div className="form-body">
-        <label htmlFor="html-form" className="form-body-label">
-          Form
-        </label>
-        <div className="input-group">
-          <TokenSelect />
-          <input type="number" placeholder="0" min="0" />
+        <div className="form-wrapper">
+          <label htmlFor="html-form" className="form-body-label">
+            From
+          </label>
+          <div className="input-group">
+            <TokenSelect />
+            <input type="number" placeholder="0" min="0" />
+          </div>
         </div>
-      </div>
-      <div className="arrow-up-down">
-        <ArrowUpDown />
-      </div>
-      <div className="form-body">
-        <label htmlFor="html-form" className="form-body-label">
-          To
-        </label>
-        <div className="input-group">
-          <TokenSelect />
-          <input type="number" placeholder="0" min="0" />
+        <div className="arrow-up-down">
+          <ArrowUpDown />
+        </div>
+        <div className="form-wrapper">
+          <label htmlFor="html-form" className="form-body-label">
+            To
+          </label>
+          <div className="input-group">
+            <TokenSelect />
+            <input type="number" placeholder="0" min="0" />
+          </div>
         </div>
       </div>
       <div className="button-wrapper">
-        <Button className="text-lg w-1/2">Swap</Button>
+        <Button>Swap</Button>
       </div>
     </div>
   );
