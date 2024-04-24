@@ -1,0 +1,77 @@
+/* swap form  */
+.form-box {
+  @apply bg-[#081431] rounded-2xl border-2 border-[#A4A4BE] w-1/2;
+  .head-box {
+    @apply p-10;
+    h1 {
+      @apply text-2xl uppercase font-semibold;
+    }
+  }
+  .form-icon {
+    @apply bg-[#FCDD6F] flex-row flex justify-between px-10 h-10 items-center;
+    span {
+      @apply text-black font-semibold
+    }
+    .icon-wrapper {
+      @apply flex space-x-2;
+      .item-icon {
+        @apply text-black cursor-pointer;
+      }
+    }
+  }
+  .form-body {
+    @apply mt-10;
+    @apply px-10;
+    .form-wrapper {
+      /* @apply my-10 px-10; */
+      .form-body-label {
+        @apply uppercase font-semibold;
+      }
+      .input-group {
+        @apply flex space-x-2 h-12 bg-white rounded-2xl p-1 align-middle justify-center mt-4;
+      }
+      input {
+        @apply rounded-2xl text-black p-2 w-full flex-1;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input:focus {
+        outline-width: 0;
+      }
+    }
+    .arrow-up-down {
+      @apply items-center flex justify-center pt-10 pb-5 cursor-pointer;
+    }
+  }
+  .button-wrapper {
+    @apply flex justify-center my-20;
+    button {
+      @apply w-10/12 rounded-2xl text-lg;
+      @apply font-semibold uppercase;
+    }
+  }
+}
+
+/* Token Select */
+.token-select {
+  @apply flex text-white text-center bg-blue-900 h-full p-2 items-center hover:bg-blue-950;
+  @apply rounded-xl cursor-pointer space-x-2;
+  span {
+    @apply text-base font-semibold
+  }
+}
+
+footer {
+  @apply py-5 px-4 md:px-4;
+
+  .inner {
+    @apply flex flex-row justify-between max-w-screen-xl mx-auto;
+
+    .txt-logo {
+      @apply text-xl font-bold;
+    }
+  }
+}
