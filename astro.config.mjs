@@ -10,7 +10,7 @@ export default defineConfig({
   output: "server",
   prefetch: true,
   adapter: node({
-    mode: "middleware",
+    mode: "standalone",
   }),
   integrations: [
     react({
