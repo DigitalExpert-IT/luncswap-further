@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 
-export function StoreCode() {
+function Devtools() {
   useEffect(() => {}, []);
 
   return null;
 }
+
+export default Devtools;
