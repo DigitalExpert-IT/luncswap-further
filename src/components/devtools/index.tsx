@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { InstantiateTab } from "./intantiate-tab";
 
 function Devtools() {
   useEffect(() => {}, []);
@@ -12,7 +13,7 @@ function Devtools() {
         <TabsTrigger value="store-code">Upload Wasm</TabsTrigger>
       </TabsList>
       <TabsContent value="instantiate">
-        Make changes to your account here.
+        <InstantiateTab />
       </TabsContent>
       <TabsContent value="store-code">Change your password here.</TabsContent>
     </Tabs>
