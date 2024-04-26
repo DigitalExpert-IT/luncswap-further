@@ -15,6 +15,24 @@ class DevtoolsService {
     return result;
   }
 
+  async instantiate(
+    codeId: number,
+    instantiateMsg: object,
+    name: string,
+    mnemonic: string,
+  ) {
+    const [wallet, client] = await this.acquireConn(mnemonic);
+    const accounts = await wallet.getAccounts();
+    const result = await client.instantiate(
+      accounts[0].address,
+      codeId,
+      instantiateMsg,
+      name,
+      "auto",
+    );
+    return result;
+  }
+
   private async acquireConn(mnemonic: string) {
     const wallet = await DirectSecp256k1HdWallet.fromMnemonic(mnemonic, {
       prefix: "terra",
