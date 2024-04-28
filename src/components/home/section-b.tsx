@@ -1,40 +1,36 @@
 export function SectionB() {
   return (
     // view
-    <div className="py-20 md:py-40 overflow-x-hidden">
+    <div className="section-b">
       {/* card image */}
-      <div className="relative max-w-[80vw] w-[30rem] mx-auto">
+      <div className="card-image">
         <img
           src="https://ik.imagekit.io/msxxxaegj/Luncswap/swap.png?updatedAt=1706092359001"
           alt="swap-card"
-          className="opacity-60"
         />
         {/* pop up */}
         {/* left top */}
-        <div className="absolute left-[-27%] top-[10%] w-40 bg-gray-500/30 p-2 rounded-lg backdrop-blur-sm border-solid border border-sky-100/30 ">
-          <p className="text-center">
-            <span className="text-[#f6dd7c] font-bold">Community </span>
-            Our community will make your crypto ideas grow
-          </p>
+        <div className="popup-card-left-top">
+          <p className="card-title">Super Burn</p>
+          <p>Giving You DeFi Superpowers</p>
         </div>
 
-        <div className="absolute left-[-30%] top-[32%] w-32">
-          <p className="text-right">
-            Things you{" "}
-            <span className="text-[#f6dd7c] font-bold"> must know</span> about
-            luncswap
+        <div className="popup-slug-left-top">
+          <p>
+            Things you <span> must know</span> about luncswap
           </p>
         </div>
 
         {/* bottom left */}
-        <div className="absolute left-[-28%] bottom-[-10%] w-40 bg-gray-500/30 p-2 rounded-lg backdrop-blur-sm border-solid border border-sky-100/30">
-          <p className="text-center">
-            <span className="text-[#f6dd7c] font-bold"> Maintained </span> Our
-            Developer Keep update with new tech to keep swap reliable
+        <div className="popup-card-bottom-left">
+          <p className="card-title">Fuel LUNC&apos;s Rise</p>
+          <p>
+            Each swap includes a 1.5% burn tax, boosting LUNC&apos;s value and
+            stability
           </p>
         </div>
 
-        <div className="absolute left-[10%] bottom-[-5%] w-40">
+        <div className="popup-slug-left-bottom">
           <p>
             What makes luncswap{" "}
             <span className="text-[#f6dd7c] font-bold">different</span>?
@@ -42,18 +38,13 @@ export function SectionB() {
         </div>
 
         {/* right top */}
-        <div className="absolute right-[-28%] top-[20%] w-32">
-          <p>
-            Why <span className="text-[#f6dd7c] font-bold">choose</span>{" "}
-            luncswap?
-          </p>
+        <div className="popup-slug-right-top">
+          <p>Build Project choose?</p>
         </div>
 
-        <div className="absolute right-[-28%] top-[31%] w-40 bg-gray-500/30 p-2 rounded-lg backdrop-blur-sm border-solid border border-sky-100/30">
-          <p className="text-center">
-            <span className="text-[#f6dd7c] font-bold">Easy to Use</span> Our
-            swap is easy to use even your new in crypto world
-          </p>
+        <div className="popup-card-right-top">
+          <p className="card-title">Elevate Together</p>
+          <p>swap is easy to use even your new in crypto world</p>
         </div>
       </div>
     </div>

@@ -30,6 +30,105 @@
 }
 
 /* section b */
+.section-b {
+  @apply py-20 md:py-40 overflow-x-hidden;
+  .card-image {
+    @apply relative max-w-[80vw] w-[30rem] mx-auto;
+    img {
+      @apply opacity-60;
+    }
+    p {
+      @apply text-center
+    }
+    p.card-title {
+      @apply text-[#f6dd7c] font-bold
+    }
+
+    .popup-card-left-top {
+      @apply absolute left-[-27%] top-[10%] w-40 bg-gray-500/30 p-2;
+      @apply rounded-lg backdrop-blur-sm border-solid border border-sky-100/30;
+    }
+    .popup-slug-left-top {
+      @apply absolute left-[-28%] top-[28%] w-32;
+      p {
+        @apply text-right;
+      }
+      span {
+        @apply text-[#f6dd7c]
+      }
+    }
+
+    .popup-card-bottom-left {
+      @apply absolute left-[-28%] bottom-[-10%];
+      @apply w-60 bg-gray-500/30 p-2 rounded-lg;
+      @apply backdrop-blur-sm border-solid border border-sky-100/30;
+    }
+    .popup-slug-left-bottom {
+      @apply absolute left-[25%] bottom-[-10%] w-40;
+      p {
+        @apply text-left
+      }
+    }
+
+    .popup-card-right-top {
+      @apply absolute right-[-28%] top-[31%] w-40;
+      @apply bg-gray-500/30 p-2 rounded-lg;
+      @apply backdrop-blur-sm border-solid border border-sky-100/30;
+    }
+    .popup-slug-right-top {
+      @apply absolute right-[-28%] top-[20%] w-32;
+      p {
+        @apply text-left
+      }
+    }
+  }
+}
+
+/* section c */
+.section-c {
+  @apply py-[150px] px-4 md:px-12 overflow-x-hidden;
+  .inner {
+    @apply bg-[#020624] relative;
+    @apply container px-8 pt-12 pb-20;
+    @apply flex flex-col gap-12;
+    @apply rounded-2xl shadow-2xl;
+    .heading {
+      @apply text-center relative z-10;
+      h2 {
+        @apply text-4xl md:text-5xl mb-3 font-semibold;
+      }
+      p {
+        @apply max-w-[600px] mx-auto text-lg text-gray-500;
+      }
+    }
+
+    .socials {
+      @apply flex flex-row justify-center gap-4;
+    }
+  }
+
+  .social-card {
+    @apply bg-primary relative z-10 cursor-pointer;
+    @apply hover:bg-primary/90;
+    @apply rounded-xl;
+
+    figure {
+      img {
+        @apply px-10 py-6 w-[40vw] md:max-w-[200px];
+      }
+
+      figcaption {
+        @apply text-center text-sm md:text-lg font-bold py-2 pb-3 mb-[-1px];
+        background-color: rgba(0, 0, 0, 0.3);
+
+        a {
+          @apply text-white hover:text-white/70;
+        }
+      }
+    }
+  }
+}
+
 
 /* section d */
 .section-d {
