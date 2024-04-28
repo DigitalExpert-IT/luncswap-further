@@ -1,19 +1,29 @@
+import { X } from "lucide-react";
+import React from "react";
+
 type ModalProps = {
   open: boolean;
   onClose: () => void;
-  children: JSX.Element;
+  modalHead: string;
+  children: React.ReactNode;
 };
 
-export const Modal = ({ open, onClose, children }: ModalProps) => {
+export const Modal = ({ open, onClose, children, modalHead }: ModalProps) => {
   return (
     <div
-      onClick={onClose}
-      className={`fixed inset-0 flex justify-center items-center transisition-colors ${open ? "visible bg-black/20" : "invisible"}`}
+      className={`z-50 backdrop-blur-sm fixed inset-0 overscroll-contain overflow-hidden flex justify-center transisition-colors ${open ? "visible bg-black/40" : "invisible"}`}
     >
+      <div onClick={onClose} className="relative w-screen h-screen" />
       <div
-        className={`bg-white rounded-xl shadow p-6 transition-all ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"}`}
+        className={`absolute bg-white max-h-[calc(80vh-5em)] h-min rounded-xl shadow-2xl transition-all w-4/5 lg:w-1/2 top-10 ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"}`}
       >
-        {children}
+        <div className="bg-yellow-400 rounded-t-xl p-5 justify-between flex">
+          <h1 className="text-black uppercase font-bold">{modalHead}</h1>
+          <X className="cursor-pointer text-black" onClick={onClose} />
+        </div>
+        <div className="overflow-y-auto h-min max-h-[calc(50vh-5em)]">
+          {children}
+        </div>
       </div>
     </div>
   );
