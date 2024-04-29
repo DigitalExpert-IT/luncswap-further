@@ -15,7 +15,7 @@ export const Modal = ({ open, onClose, children, modalHead }: ModalProps) => {
     >
       <div onClick={onClose} className="relative w-screen h-screen" />
       <div
-        className={`absolute bg-white max-h-[calc(80vh-5em)] h-min rounded-xl shadow-2xl transition-all w-4/5 lg:w-1/2 top-10 ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"}`}
+        className={`absolute bg-[#081431] max-h-[calc(80vh-5em)] h-min rounded-xl shadow-2xl transition-all w-4/5 lg:w-1/2 top-10 ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"}`}
       >
         <div className="bg-yellow-400 rounded-t-xl p-5 justify-between flex">
           <h1 className="text-black uppercase font-bold">{modalHead}</h1>

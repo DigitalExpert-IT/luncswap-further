@@ -41,14 +41,14 @@ export const TokenSelect = () => {
       >
         {tokenList.map((item, idx) => (
           <div
-            className="flex items-center space-x-3 p-5 hover:bg-green-500 hover:cursor-pointer"
+            className="flex items-center space-x-3 p-5 hover:bg-gray-500 hover:cursor-pointer"
             key={idx}
           >
             <Avatar>
               <AvatarImage src={item.image} alt={item.name} />
               <AvatarFallback>{aliases(item.name)}</AvatarFallback>
             </Avatar>
-            <h1 className="text-black/80">{item.name}</h1>
+            <h1>{item.name}</h1>
           </div>
         ))}
       </Modal>
