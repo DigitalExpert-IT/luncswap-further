@@ -1,5 +1,6 @@
 import { X } from "lucide-react";
 import React from "react";
+import { SearchBar } from "./search-bar";
 
 type ModalProps = {
   open: boolean;
@@ -21,7 +22,9 @@ export const Modal = ({ open, onClose, children, modalHead }: ModalProps) => {
           <h1 className="text-black uppercase font-bold">{modalHead}</h1>
           <X className="cursor-pointer text-black" onClick={onClose} />
         </div>
-        <div className="overflow-y-auto h-min max-h-[calc(50vh-5em)]">
+        <SearchBar />
+        <hr />
+        <div className="overflow-y-scroll h-min max-h-[calc(50vh-5em)]">
           {children}
         </div>
       </div>
