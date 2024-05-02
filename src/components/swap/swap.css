@@ -1,8 +1,16 @@
+/* swap page */
+.swap-page {
+  @apply mt-10 md:p-10 justify-center items-center h-screen;
+  .swap-page-item {
+    @apply flex justify-center space-x-2;
+  }
+}
+
 /* swap form  */
 .form-box {
-  @apply bg-[#081431] rounded-2xl border-2 border-[#A4A4BE] w-11/12 md:w-2/3 lg:w-1/2 xl:w-[25%];
+  @apply bg-[#081431] rounded-2xl border-2 max-h-[70%] border-[#A4A4BE] w-[95%] md:w-2/3 lg:w-1/2 xl:w-[30%];
   .head-box {
-    @apply p-5 md:p-10;
+    @apply p-5 md:px-10;
     h1 {
       @apply text-2xl uppercase font-semibold;
     }
@@ -15,7 +23,7 @@
     .icon-wrapper {
       @apply flex space-x-1;
       .item-icon {
-        @apply text-black cursor-pointer ;
+        @apply cursor-pointer ;
       }
     }
   }
@@ -23,7 +31,6 @@
     @apply mt-5 md:mt-10;
     @apply px-5 md:px-10;
     .form-wrapper {
-      /* @apply my-10 px-10; */
       .form-body-label {
         @apply uppercase font-semibold;
       }
@@ -47,9 +54,9 @@
     }
   }
   .button-wrapper {
-    @apply flex justify-center my-10;
+    @apply flex justify-center my-20;
     button {
-      @apply w-11/12 md:w-44 rounded-2xl text-lg;
+      @apply w-11/12 md:w-[80%] rounded-2xl text-lg;
       @apply font-semibold uppercase;
     }
   }
@@ -59,9 +66,23 @@
 .token-select {
   @apply flex text-white text-center bg-[#172852] h-full p-2 items-center hover:bg-[#122146];
   @apply rounded-xl cursor-pointer space-x-2;
-  
+
   span {
     @apply text-base font-semibold
+  }
+}
+
+/* AllPool */
+.allpool {
+  @apply w-full md:w-[50%] bg-[#191B1F] md:rounded-xl md:border-[#A4A4BE] md:border-2 md:max-h-[50%];
+  .allpool-head {
+    @apply p-5;
+    h1 {
+      @apply text-2xl uppercase font-semibold;
+    }
+  }
+  .allpool-content {
+    @apply p-5
   }
 }
 
