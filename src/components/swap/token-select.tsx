@@ -23,7 +23,7 @@ export const TokenSelect = () => {
 
   return (
     <div>
-      <div className="token-select">
+      <div className="token-select" onClick={() => setOpen(true)}>
         <span className="mr-2 text-sm sm:text-base">Select Token</span>
         <ChevronDown className="h-4 w-4" />
       </div>
