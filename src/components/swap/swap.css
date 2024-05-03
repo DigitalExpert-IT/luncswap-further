@@ -76,7 +76,7 @@
 .allpool {
   @apply w-full md:w-[50%] bg-[#191B1F] md:rounded-xl md:border-[#A4A4BE] md:border-2 md:max-h-[50%];
   .allpool-head {
-    @apply p-5;
+    @apply hidden p-5 md:block ;
     h1 {
       @apply text-2xl uppercase font-semibold;
     }
