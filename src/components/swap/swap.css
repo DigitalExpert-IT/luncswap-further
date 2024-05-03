@@ -35,18 +35,16 @@
         @apply uppercase font-semibold;
       }
       .input-group {
-        @apply flex space-x-2 h-12 bg-white rounded-2xl p-1 align-middle justify-center mt-4;
-      }
-      input {
-        @apply rounded-2xl text-black p-2 w-full flex-1;
-      }
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      input:focus {
-        outline-width: 0;
+        @apply bg-white rounded-xl p-1 flex items-center mt-2;
+        .form-input-item {
+          @apply bg-transparent text-black flex-1 focus:border-transparent shadow-none;
+          @apply focus:ring-0 placeholder-gray-400 border-none;
+        }
+        .form-input-item::-webkit-outer-spin-button,
+        .form-input-item::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
       }
     }
     .arrow-up-down {
@@ -64,11 +62,11 @@
 
 /* Token Select */
 .token-select {
-  @apply flex text-white text-center bg-[#172852] h-full p-2 items-center hover:bg-[#122146];
-  @apply rounded-xl cursor-pointer space-x-2;
-
+  @apply bg-[#172852] hover:bg-[#122146] focus:ring-gray-600 ;
+  @apply text-gray-200 rounded-xl px-4 py-2 focus:outline-none focus:ring-2;
+  @apply flex items-center cursor-pointer;
   span {
-    @apply text-base font-semibold
+    @apply text-sm sm:text-base font-semibold mr-2;
   }
 }
 

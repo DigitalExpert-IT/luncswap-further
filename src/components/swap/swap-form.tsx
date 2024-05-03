@@ -10,6 +10,7 @@ import { TokenSelect } from "./token-select";
 import { Button } from "@/components/ui/button";
 import type { Dispatch, SetStateAction } from "react";
 import { ICON_CONTENTS } from "@/constant/icon-content";
+import { Input } from "../ui/input";
 
 type SwapFormProps = {
   setSideContent: Dispatch<SetStateAction<string>>;
@@ -70,7 +71,12 @@ export const SwapForm = ({ setSideContent, sideContent }: SwapFormProps) => {
           </label>
           <div className="input-group">
             <TokenSelect />
-            <input type="number" placeholder="0" min="0" />
+            <Input
+              className="form-input-item"
+              placeholder="0"
+              type="number"
+              min="0"
+            />
           </div>
         </div>
         <div className="arrow-up-down">
@@ -82,7 +88,12 @@ export const SwapForm = ({ setSideContent, sideContent }: SwapFormProps) => {
           </label>
           <div className="input-group">
             <TokenSelect />
-            <input type="number" placeholder="0" min="0" />
+            <Input
+              className="form-input-item"
+              placeholder="0"
+              type="number"
+              min="0"
+            />
           </div>
         </div>
       </div>

@@ -23,16 +23,9 @@ export const TokenSelect = () => {
 
   return (
     <div>
-      <div
-        className="token-select"
-        onClick={() => setOpen(true)}
-        data-modal-target="static-modal"
-      >
-        <div>
-          <span>Token Select</span>
-        </div>
-
-        <ChevronDown />
+      <div className="token-select">
+        <span className="mr-2 text-sm sm:text-base">Select Token</span>
+        <ChevronDown className="h-4 w-4" />
       </div>
       <Modal
         open={open}
