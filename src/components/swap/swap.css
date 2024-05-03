@@ -54,7 +54,7 @@
   .button-wrapper {
     @apply flex justify-center my-20;
     button {
-      @apply w-11/12 md:w-[80%] rounded-2xl text-lg;
+      @apply w-11/12 md:w-[83%] rounded-2xl text-lg;
       @apply font-semibold uppercase;
     }
   }
