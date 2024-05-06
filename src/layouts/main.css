@@ -1,8 +1,8 @@
 body {
-  background: linear-gradient(181deg, #1a3150 0.54%, #070626 98.69%);
+  background: #001D2E;
 }
 nav.navbar {
-  background-color: #010525;
+  background-color: #02314D;
   @apply h-[55px] lg:h-[70px];
   @apply flex flex-row items-center;
   @apply px-3 lg:px-4;
