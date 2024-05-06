@@ -1,7 +1,7 @@
 /* section a */
 .section-a {
-  @apply container pt-10 mb-20 overflow-x-hidden;
-  .inner {
+  @apply relative bg-gradient-to-b from-sky-700 h-screen overflow-hidden;
+  /* .inner {
     @apply flex flex-row relative pt-8 pb-16 md:py-0;
     .heading {
       @apply flex-[3] relative z-10 md:pt-20;
@@ -26,7 +26,7 @@
       @apply absolute w-[100vw] right-[-50%] bottom-[0] opacity-30;
       @apply md:static md:opacity-100 md:w-full md:flex-[2] md:object-contain;
     }
-  }
+  } */
 }
 
 /* section b */
