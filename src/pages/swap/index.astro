@@ -1,16 +1,9 @@
 ---
 import LayoutMain from "@/layouts/main.astro";
-import {SwapForm} from "@/components/swap"
+import {SwapPage} from "@/components/swap"
 ---
 
 <LayoutMain title="Swap">
-  <div class="swap-container">
-    <SwapForm />
-  </div>
+    <SwapPage client:load />
 </LayoutMain>
 
-<style>
-  .swap-container {
-    @apply flex justify-center items-center h-screen;
-  }
-</style>
