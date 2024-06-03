@@ -32,7 +32,8 @@
 /* section b */
 .section-b {
   @apply py-20 md:py-40 overflow-x-hidden;
-  .card-image {
+  
+  /* .card-image {
     @apply relative max-w-[80vw] w-[30rem] mx-auto;
     img {
       @apply opacity-60;
@@ -81,7 +82,7 @@
         @apply text-left
       }
     }
-  }
+  } */
 }
 
 /* section c */

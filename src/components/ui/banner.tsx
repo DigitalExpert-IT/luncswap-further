@@ -20,7 +20,7 @@ export const Banner = () => {
       <div className="flex-1">
         <img
           srcSet="https://ik.imagekit.io/msxxxaegj/Luncswap/rabbitNBull.png?updatedAt=1715000154150"
-          className="absolute aspect-[5.3] -top-[18px] right-[15%]"
+          className="absolute aspect-[5.3] -top-[-4.7%] right-[11%]"
         />
       </div>
     </div>
