@@ -1,32 +1,28 @@
 /* section a */
 .section-a {
   @apply relative bg-gradient-to-b from-sky-700 h-screen overflow-hidden;
-  /* .inner {
-    @apply flex flex-row relative pt-8 pb-16 md:py-0;
-    .heading {
-      @apply flex-[3] relative z-10 md:pt-20;
-      h1 {
-        @apply font-extrabold leading-[1.2] md:leading-[.9];
-        @apply text-[2.5rem] md:text-[5rem];
-
-        span.punch {
-          @apply text-[#f6dd7c] font-bold;
+  .banner-wrapper{
+    @apply mt-20;
+  }
+  .inner{
+    @apply flex justify-center items-center gap-10;
+    .head-wrapper{
+      @apply flex-col space-y-10;
+      .head-title {
+        @apply text-5xl font-bold;
+        span {
+          @apply text-yellow-300;
         }
       }
-      p {
-        @apply mt-4 mb-6;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 36px;
+      .button-wrapper {
+        @apply space-x-5;
+        .second-button {
+          @apply bg-white;
+        }
       }
     }
-
-    .illustration {
-      max-width: 300vw !important;
-      @apply absolute w-[100vw] right-[-50%] bottom-[0] opacity-30;
-      @apply md:static md:opacity-100 md:w-full md:flex-[2] md:object-contain;
-    }
-  } */
+  }
+  
 }
 
 /* section b */

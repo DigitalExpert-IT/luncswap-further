@@ -4,7 +4,7 @@ export const CARD = [
     description: "1.5% burn tax, boosting LUNC's value",
     image: "/burn-crop.jpg",
     url: "#",
-    button: "burn",
+    button: "Swap now",
   },
   {
     title: "stacking",

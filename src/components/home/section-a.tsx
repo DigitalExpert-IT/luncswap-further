@@ -9,19 +9,18 @@ export function SectionA() {
         className="absolute w-screen opacity-50 z-[-1] aspect-[1.9]"
       />
       <div className="container">
-        <div className="mt-20">
+        <div className="banner-wrapper">
           <Banner />
         </div>
-        <div className="flex justify-center items-center gap-10">
+        <div className="inner">
           <img srcSet="https://ik.imagekit.io/msxxxaegj/Luncswap/logoWBlink.png?updatedAt=1715000553428" />
-          <div className="flex-column space-y-10">
-            <span className="text-5xl font-bold">
-              A DEX exclusively created for{" "}
-              <span className="text-yellow-300">LUNACLASSIC</span> is here.
+          <div className="head-wrapper">
+            <span className="head-title">
+              A DEX exclusively created for <span>LUNACLASSIC</span> is here.
             </span>
-            <div className="space-x-5">
+            <div className="button-wrapper">
               <Button>Connect Wallet</Button>
-              <Button className="bg-white">Swap Now</Button>
+              <Button className="second-button">Swap Now</Button>
             </div>
           </div>
         </div>
