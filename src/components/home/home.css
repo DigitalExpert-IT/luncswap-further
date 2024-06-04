@@ -31,7 +31,7 @@
 
 /* section b */
 .section-b {
-  @apply py-20 md:py-40 overflow-x-hidden;
+  @apply overflow-x-hidden container;
   
   /* .card-image {
     @apply relative max-w-[80vw] w-[30rem] mx-auto;
