@@ -1,5 +1,5 @@
 .text-stroke {
-  @apply text-6xl font-extrabold;
+  @apply text-4xl md:text-6xl font-extrabold;
   -webkit-text-stroke: 5px #FCDD6F;
    color: #025182;
    paint-order: stroke fill;
