@@ -4,7 +4,7 @@ import "./home.css";
 
 export function SectionD() {
   return (
-    <div className="my-10 lg:my-40">
+    <div className="section-d">
       <div className="container">
         <div className="flex rounded-3xl bg-[url('space.png')] bg-no-repeat relative h-[51vh] overflow-y-visible p-5 items-center">
           <img

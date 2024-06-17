@@ -20,3 +20,30 @@ export const CARD = [
     button: "learn-more",
   },
 ];
+
+export const NEWS = [
+  {
+    title: "Can Terra Classic Finaly Reach $1",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    image: "news1.png",
+    source: "coinmarketcap",
+    published: "juni 27, 2024",
+  },
+  {
+    title: "LUNC Surges as Do Kwon Freed",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    image: "news2.png",
+    source: "coinmarketcap",
+    published: "juni 27, 2024",
+  },
+  {
+    title: "Binance Burns 4.17 Billion Terra Luna Classic",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    image: "news3.png",
+    source: "coinmarketcap",
+    published: "juni 27, 2024",
+  },
+];

@@ -1,12 +1,12 @@
 /* section a */
 .section-a {
   @apply bg-gradient-to-b from-sky-700;
-  .banner-wrapper{
+  .banner-wrapper {
     @apply pt-10;
   }
-  .inner{
+  .inner {
     @apply justify-center items-center gap-10 lg:flex;
-    .head-wrapper{
+    .head-wrapper {
       @apply flex-col space-y-10;
       .head-title {
         @apply text-5xl font-bold;
@@ -22,7 +22,6 @@
       }
     }
   }
-  
 }
 
 /* section b */
@@ -32,7 +31,7 @@
     @apply space-y-10 lg:space-y-0 lg:space-x-10 lg:flex;
     .card-wrapper-item {
       @apply overflow-hidden rounded-3xl relative w-full h-[65vh] max-h-[40rem];
-    }  
+    }
   }
   .card-images {
     @apply absolute object-cover z-0 opacity-100 w-full h-full;
@@ -45,41 +44,18 @@
   .pattern-image {
     @apply absolute top-96 lg:top-0 -z-10 w-screen;
   }
-  .inner{
+  .inner {
     @apply container z-10 items-center justify-center lg:flex;
   }
 }
 
-
 /* section d */
 .section-d {
-  @apply py-8 px-4 overflow-x-hidden;
-  
+  @apply my-10 lg:my-40;
+}
 
-  /* .title {
-    @apply text-4xl md:text-6xl font-bold text-center mb-4 md:mb-6;
-  }
-
-  .logos {
-    @apply flex flex-row gap-14 md:gap-24 justify-center items-center;
-
-    .logo {
-      img {
-        @apply w-full sm:w-auto m-auto;
-        max-height: 324px;
-      }
-
-      &_title {
-        @apply text-xl md:text-4xl mt-4 font-bold uppercase;
-        color: #fed83c;
-        text-shadow: 0px 2px 0px #ff7100;
-
-        @screen md {
-          text-shadow: 1px 4px 0px #ff7100;
-        }
-      }
-    }
-  } */
+/* section f */
+.section-f {
 }
 
 footer {
