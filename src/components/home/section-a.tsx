@@ -1,3 +1,4 @@
+import "./home.css";
 import { Banner } from "../ui/banner";
 import { Button } from "@/components/ui/button";
 

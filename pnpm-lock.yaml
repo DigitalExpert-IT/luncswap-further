@@ -14,6 +14,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.5.14(typescript@5.4.3))(tailwindcss@3.4.3)
+      '@fontsource/poppins':
+        specifier: ^5.0.14
+        version: 5.0.14
       '@fontsource/red-rose':
         specifier: ^5.0.20
         version: 5.0.20
@@ -597,6 +600,9 @@ packages:
   '@eslint/js@8.57.0':
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@fontsource/poppins@5.0.14':
+    resolution: {integrity: sha512-nmM1zpPo3Uh4JcGAVSQuWaZNYh2FbbwWhZ5t6hRaynmJaNTBW85d3nEh9zMmzI0HX7X5xqQVdRHeDatKpOGsnA==}
 
   '@fontsource/red-rose@5.0.20':
     resolution: {integrity: sha512-9PKj2i6qF2KJ0J1kSwFmV2yXkyRAdeBVROFaV3JIRKR8E4sSsPRXWT1A4Iw/ygpu6gi2vM4uFBgoWHgo4g808w==}
@@ -3956,6 +3962,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.0': {}
+
+  '@fontsource/poppins@5.0.14': {}
 
   '@fontsource/red-rose@5.0.20': {}
 

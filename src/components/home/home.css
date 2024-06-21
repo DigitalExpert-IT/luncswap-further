@@ -9,7 +9,7 @@
     .head-wrapper {
       @apply flex-col space-y-10;
       .head-title {
-        @apply text-5xl font-bold;
+        @apply text-5xl font-extrabold font-[red-rose];
         span {
           @apply text-yellow-300;
         }
@@ -31,6 +31,12 @@
     @apply space-y-10 lg:space-y-0 lg:space-x-10 lg:flex;
     .card-wrapper-item {
       @apply overflow-hidden rounded-3xl relative w-full h-[65vh] max-h-[40rem];
+      .card-content {
+        @apply bg-gradient-to-t from-black z-10 flex flex-col text-center h-full place-content-end pb-10 space-y-2 absolute w-full;
+        .card-title {
+          @apply text-4xl uppercase font-extrabold font-["red-rose"];
+        }
+      }
     }
   }
   .card-images {
@@ -46,6 +52,15 @@
   }
   .inner {
     @apply container z-10 items-center justify-center lg:flex;
+    .text-content {
+      @apply flex flex-col;
+      .title-text {
+        @apply text-yellow-300 text-6xl font-bold font-["red-rose"] leading-[1.2];
+      }
+      .description-text {
+        @apply mt-5 md:text-2xl;
+      }
+    }
   }
 }
 

@@ -7,7 +7,7 @@ export const CARD = [
     button: "Swap now",
   },
   {
-    title: "stacking",
+    title: "staking",
     description: "stake with LUNC SWAP Validator",
     image: "/stacking.jpg",
     url: "#",
