@@ -4,7 +4,7 @@ export const CARD = [
     description: "1.5% burn tax, boosting LUNC's value",
     image: "/burn-crop.jpg",
     url: "#",
-    button: "Swap now",
+    button: "swap now",
   },
   {
     title: "staking",
@@ -17,7 +17,7 @@ export const CARD = [
     title: "launchpad",
     description: "with every LUNC Burn, Your Project's Value Ignites",
     image: "/launchpad.jpg",
-    button: "learn-more",
+    button: "learn more",
   },
 ];
 
@@ -45,5 +45,53 @@ export const NEWS = [
     image: "news3.png",
     source: "coinmarketcap",
     published: "juni 27, 2024",
+  },
+];
+
+export const COMMUNITY = [
+  {
+    name: "Discord",
+    infor: "Luncswap validator",
+    link: "#",
+    linkName: "Join channel",
+  },
+  {
+    name: "Telegram",
+    infor: "Luncswap validator",
+    link: "#",
+    linkName: "Join channel",
+  },
+  {
+    name: "X",
+    infor: "Luncswap validator",
+    link: "#",
+    linkName: "Join channel",
+  },
+];
+
+export const EMPOWER = [
+  {
+    name: "farming",
+    image: "bunnyfarming.png",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    linkname: "Farm now",
+    link: "#",
+  },
+  {
+    name: "Staking",
+    image: "bunnystack.png",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    linkname: "Stake now",
+    link: "#",
+  },
+  {
+    name: "Vote",
+    image: "bunnygovern.png",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    linkname: "Vote now",
+    link: "#",
   },
 ];
