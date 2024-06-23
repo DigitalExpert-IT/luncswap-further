@@ -95,3 +95,48 @@ export const EMPOWER = [
     link: "#",
   },
 ];
+
+export const FOOTER_DATA = [
+  {
+    title: "about",
+    link: "#",
+    child: [
+      {
+        name: "contact",
+        link: "#",
+      },
+      {
+        name: "community",
+        link: "#",
+      },
+    ],
+  },
+  {
+    title: "help",
+    link: "#",
+    child: [
+      {
+        name: "contact",
+        link: "#",
+      },
+      {
+        name: "community",
+        link: "#",
+      },
+    ],
+  },
+  {
+    title: "developer",
+    link: "#",
+    child: [
+      {
+        name: "contact",
+        link: "#",
+      },
+      {
+        name: "community",
+        link: "#",
+      },
+    ],
+  },
+];

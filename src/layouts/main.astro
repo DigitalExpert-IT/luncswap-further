@@ -3,6 +3,7 @@ import "@/styles/global.css";
 import "./main.css";
 import { SITENAME } from "@/constant/config";
 import { SideMenu } from "@/components/ui/side-menu";
+import { Footer } from "@/components/layout";
 
 type Props = {
   title?: string;
@@ -34,11 +35,6 @@ const computedTitle = title ? `${title} | ${SITENAME}` : SITENAME;
       </div>
     </nav>
     <slot />
-    <footer>
-      <div class="inner">
-        <p>All rights reserved.</p>
-        <p class="txt-logo">Luncswap</p>
-      </div>
-    </footer>
+    <Footer client:load />
   </body>
 </html>

@@ -73,14 +73,14 @@
 .section-f {
 }
 
-footer {
-  @apply py-5 px-4 md:px-4;
+/* footer {
+  @apply py-5 px-4 md:px-4 bg-[#011521];
 
   .inner {
-    @apply flex flex-row justify-between max-w-screen-xl mx-auto;
+    @apply flex flex-row justify-between mx-auto;
 
     .txt-logo {
       @apply text-xl font-bold;
     }
   }
-}
+} */

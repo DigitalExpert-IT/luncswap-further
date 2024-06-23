@@ -2,7 +2,7 @@ import "./home.css";
 import { Banner } from "../ui/banner";
 import { Button } from "@/components/ui/button";
 
-export function SectionA() {
+export function SectionHeader() {
   return (
     <div className="section-a">
       <img
