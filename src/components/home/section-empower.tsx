@@ -17,7 +17,7 @@ export const SectionEmpower = () => {
             src="rabbit&truck.png"
             className="opacity-40 md:opacity-10 lg:opacity-100 absolute -bottom-10 -left-5 w-[30%]"
           />
-          <div className="md:w-[0%] lg:w-[80%] 2xl:w-[50%] hidden md:block"></div>
+          <div className="md:w-[0%] lg:w-[80%] xl:w-[90%] 2xl:w-[50%] hidden md:block"></div>
           <div className="z-10 space-y-20 md:space-y-0 md:flex">
             {EMPOWER.map((item, idx) => (
               <div className="flex flex-col xl:items-start" key={idx}>
