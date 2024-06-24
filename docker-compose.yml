@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    image: tuxinity/luncswap
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./:/app"
+      - "/app/.tscache"
+      - "/app/dist"
+      - "/app/node_modules"
+    container_name: luncswap
