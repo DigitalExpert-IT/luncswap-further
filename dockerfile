@@ -1,4 +1,4 @@
-FROM node:18-slim as BASE
+FROM --platform=linux/amd64 node:18-slim as BASE
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
