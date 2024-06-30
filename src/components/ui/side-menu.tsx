@@ -13,7 +13,7 @@ import { MenuIcon } from "lucide-react";
 const NAVIGATIONS = [
   {
     label: "Swap",
-    href: "#",
+    href: "/swap",
   },
 ] as const;
 

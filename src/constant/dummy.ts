@@ -116,11 +116,15 @@ export const FOOTER_DATA = [
     link: "#",
     child: [
       {
-        name: "contact",
+        name: "customer support",
         link: "#",
       },
       {
-        name: "community",
+        name: "troubleshooting",
+        link: "#",
+      },
+      {
+        name: "guides",
         link: "#",
       },
     ],
@@ -130,11 +134,7 @@ export const FOOTER_DATA = [
     link: "#",
     child: [
       {
-        name: "contact",
-        link: "#",
-      },
-      {
-        name: "community",
+        name: "documentation",
         link: "#",
       },
     ],

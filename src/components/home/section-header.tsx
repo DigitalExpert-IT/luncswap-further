@@ -21,7 +21,9 @@ export function SectionHeader() {
             </span>
             <div className="button-wrapper">
               <Button>Connect Wallet</Button>
-              <Button className="second-button">Swap Now</Button>
+              <a href="/swap">
+                <Button className="second-button">Swap Now</Button>
+              </a>
             </div>
           </div>
         </div>
