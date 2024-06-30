@@ -73,24 +73,21 @@ export const EMPOWER = [
   {
     name: "farming",
     image: "bunnyfarming.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    description: "Farm tokens, harvest LUNS",
     linkname: "Farm now",
     link: "#",
   },
   {
     name: "Staking",
     image: "bunnystack.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    description: "Stake tokens, get LUNS",
     linkname: "Stake now",
     link: "#",
   },
   {
     name: "Vote",
     image: "bunnygovern.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    description: "Governance Porject with LUNS",
     linkname: "Vote now",
     link: "#",
   },
